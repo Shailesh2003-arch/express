@@ -1,0 +1,14 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "this is a learning phase for express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shailesh Thorat",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
