@@ -9,6 +9,7 @@
   "author": "Shailesh Thorat",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
   }
 }
