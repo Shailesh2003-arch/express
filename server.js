@@ -14,6 +14,8 @@ app.use(express.json());
 
 const movieData = JSON.parse(fs.readFileSync("./data/movies.json", "utf-8")); // we read the data just once to avoid the numerous time of data reading whenever the client hits the request.
 
+console.log(typeof movieData);
+
 // creating our first api...
 
 // first get request...
