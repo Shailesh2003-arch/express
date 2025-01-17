@@ -7,6 +7,7 @@ const fs = require("fs");
 // to serve the data from our json file to the client we need to read it...
 //  And to do so will be using the node api 'fs'
 
+// app.use(express.json());
 app.use(express.json());
 
 // reading the data source
@@ -42,6 +43,24 @@ app.post("/Movies", (req, res) => {
 
   // res.send(`Created`);
 });
+
+// Practice purpose...
+// app.post("/Movies", (req, res) => {
+//   // console.log(req.body);
+//   const newId = movieData[movieData.length - 1].id + 1;
+//   const newMovie = Object.assign({ id: newId }, req.body);
+//   console.log(newMovie);
+//   // res.send(`created`); // sending response to the server that data is created
+//   movieData.push(newMovie);
+//   fs.writeFile("./data/movies.json", JSON.stringify(movieData), (err) => {
+//     res.status(201).json({
+//       status: "success",
+//       data: {
+//         movie: newMovie,
+//       },
+//     });
+//   });
+// });
 
 const port = 3000;
 app.listen(port, () => {
